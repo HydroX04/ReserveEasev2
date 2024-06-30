@@ -10,22 +10,18 @@ using System.Windows.Forms;
 
 namespace ReserveEase
 {
-    public partial class INVOICE_FROM : Form
+    public partial class standartRate : Form
     {
-        public INVOICE_FROM()
+        public standartRate()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btnHomeg_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            WELCOME_PAGE wELCOME_PAGE = new WELCOME_PAGE();
-            wELCOME_PAGE.Show();
+            Services services = new Services();
+            this.Hide();
+            services.Show();
         }
     }
 }

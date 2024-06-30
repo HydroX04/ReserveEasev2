@@ -31,7 +31,9 @@ namespace ReserveEase
             if (id == "125" && pass == "123456")
             {
                 WELCOME_PAGE f = new WELCOME_PAGE();
+                this.Hide();
                 f.Show();
+                
             }
             else
             {
@@ -40,6 +42,11 @@ namespace ReserveEase
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

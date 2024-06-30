@@ -35,6 +35,7 @@ namespace ReserveEase
         private void btnHomee_Click(object sender, EventArgs e)
         {
             WELCOME_PAGE wcpage = new WELCOME_PAGE();
+            this.Hide();
             wcpage.Show();
 
         }
@@ -47,8 +48,7 @@ namespace ReserveEase
 
         private void button1_Click(object sender, EventArgs e)
         {
-            BOOK_NOW bOOK_NOW = new BOOK_NOW();
-            bOOK_NOW.Show();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -59,14 +59,58 @@ namespace ReserveEase
 
         private void button4_Click(object sender, EventArgs e)
         {
-            INVOICE_FROM iNVOICE_FROM = new INVOICE_FROM();
-            iNVOICE_FROM.Show();
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             guestPage guestPage = new guestPage();
             guestPage.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            dashBoardOut dashBoardOut = new dashBoardOut();
+            this.Hide();
+            dashBoardOut.Show();
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            guestPage guestPage = new guestPage();
+            this.Hide();
+            guestPage.Show();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Services service = new Services();
+            this.Hide();
+            service.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            reservationForm reservationForm = new reservationForm();
+            this.Hide();
+            reservationForm.Show();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            ReportForm reportForm = new ReportForm();
+            this.Hide();
+            reportForm.Show();
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

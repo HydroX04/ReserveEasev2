@@ -17,23 +17,15 @@ namespace ReserveEase
         {
             InitializeComponent();
 
-            InitializeTextBox(textBox1, "Last Name...");
-            InitializeTextBox(textBox2, "First Name...");
-            InitializeTextBox(textBox3, "Middle Name...");
-            InitializeTextBox(textBox4, "Contact No...");
-            InitializeTextBox(textBox7, "Email Address...");
-            InitializeTextBox(textBox5, "Address...");
-            InitializeTextBox(textBox6, "mm/dd/yyyy");
-            InitializeTextBox(textBox8, "mm/dd/yyyy");
-            InitializeTextBox(textBox9, "Room No...");
+            InitializeTextBox(txtLastName, "Last Name");
+            InitializeTextBox(txtFirstName, "First Name");
+            InitializeTextBox(txtMiddleName, "Middle Name");
+            InitializeTextBox(txtContactNo, "Contact No.");
             
-            InitializeComboBox(comboBox7, "Hr.");
-            InitializeComboBox(comboBox8, "Min.");
-            InitializeComboBox(comboBox9, "PM");
-            InitializeComboBox(comboBox10, "PM");
-            InitializeComboBox(comboBox12, "Hr.");
-            InitializeComboBox(comboBox11, "Min.");
-            InitializeComboBox(comboBox13, "Room Type");
+           
+            
+           ;
+            
 
         }
         private void InitializeComboBox(ComboBox comboBox, string initialText)
@@ -238,7 +230,18 @@ namespace ReserveEase
         private void btnHomeg_Click(object sender, EventArgs e)
         {
             WELCOME_PAGE wELCOME_PAGE = new WELCOME_PAGE();
+            this.Hide();
             wELCOME_PAGE.Show();
+        }
+
+        private void comboBox7_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

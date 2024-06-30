@@ -113,5 +113,12 @@ namespace ReserveEase
 
             return table;
         }
+
+        private void btnHmreserve_Click(object sender, EventArgs e)
+        {
+            WELCOME_PAGE wELCOME_PAGE = new WELCOME_PAGE();
+            this.Hide();
+            wELCOME_PAGE.Show();
+        }
     }
 }

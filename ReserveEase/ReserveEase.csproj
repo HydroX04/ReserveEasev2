@@ -48,12 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BOOK NOW.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BOOK NOW.Designer.cs">
-      <DependentUpon>BOOK NOW.cs</DependentUpon>
-    </Compile>
     <Compile Include="DASHBOARD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,17 +66,23 @@
     <Compile Include="contactUS.Designer.cs">
       <DependentUpon>contactUS.cs</DependentUpon>
     </Compile>
+    <Compile Include="dashBoardOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashBoardOut.Designer.cs">
+      <DependentUpon>dashBoardOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deluxeRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deluxeRate.Designer.cs">
+      <DependentUpon>deluxeRate.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUEST PAGE.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUEST PAGE.Designer.cs">
       <DependentUpon>GUEST PAGE.cs</DependentUpon>
-    </Compile>
-    <Compile Include="INVOICE FROM.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="INVOICE FROM.Designer.cs">
-      <DependentUpon>INVOICE FROM.cs</DependentUpon>
     </Compile>
     <Compile Include="LOGIN PAGE.cs">
       <SubType>Form</SubType>
@@ -98,12 +98,18 @@
     <Compile Include="ReportForm.Designer.cs">
       <DependentUpon>ReportForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Room.cs" />
-    <Compile Include="RoomManagementForm.cs">
+    <Compile Include="reservationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RoomManagementForm.Designer.cs">
-      <DependentUpon>RoomManagementForm.cs</DependentUpon>
+    <Compile Include="reservationForm.Designer.cs">
+      <DependentUpon>reservationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Room.cs" />
+    <Compile Include="roomAvailable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roomAvailable.Designer.cs">
+      <DependentUpon>roomAvailable.cs</DependentUpon>
     </Compile>
     <Compile Include="Services.cs">
       <SubType>Form</SubType>
@@ -111,15 +117,24 @@
     <Compile Include="Services.Designer.cs">
       <DependentUpon>Services.cs</DependentUpon>
     </Compile>
+    <Compile Include="singleRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="singleRate.Designer.cs">
+      <DependentUpon>singleRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="standartRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="standartRate.Designer.cs">
+      <DependentUpon>standartRate.cs</DependentUpon>
+    </Compile>
     <Compile Include="WELCOME PAGE.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="WELCOME PAGE.Designer.cs">
       <DependentUpon>WELCOME PAGE.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BOOK NOW.resx">
-      <DependentUpon>BOOK NOW.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DASHBOARD.resx">
       <DependentUpon>DASHBOARD.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,11 +144,14 @@
     <EmbeddedResource Include="contactUS.resx">
       <DependentUpon>contactUS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="dashBoardOut.resx">
+      <DependentUpon>dashBoardOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deluxeRate.resx">
+      <DependentUpon>deluxeRate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUEST PAGE.resx">
       <DependentUpon>GUEST PAGE.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="INVOICE FROM.resx">
-      <DependentUpon>INVOICE FROM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LOGIN PAGE.resx">
       <DependentUpon>LOGIN PAGE.cs</DependentUpon>
@@ -151,11 +169,20 @@
     <EmbeddedResource Include="ReportForm.resx">
       <DependentUpon>ReportForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RoomManagementForm.resx">
-      <DependentUpon>RoomManagementForm.cs</DependentUpon>
+    <EmbeddedResource Include="reservationForm.resx">
+      <DependentUpon>reservationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roomAvailable.resx">
+      <DependentUpon>roomAvailable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Services.resx">
       <DependentUpon>Services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleRate.resx">
+      <DependentUpon>singleRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="standartRate.resx">
+      <DependentUpon>standartRate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WELCOME PAGE.resx">
       <DependentUpon>WELCOME PAGE.cs</DependentUpon>
@@ -229,6 +256,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\43ef24e1bfe8ef4acf7ad0d8ca298f66.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7f85588e86b35c5fb2e6869c776d5fe7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c763d4c96f049f7a789d90f3e94cea20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-06-29 224143.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dashboard-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dashboard-layout-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dashboard-layout-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-reception-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hotel-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dashboard-layout-48 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-reception-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hotel-50 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-06-29 235103.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Amorgos-Standard-Room2-e1464286437370.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deluxe-room-twin-1-2000px_wide.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Amorgos-Standard-Room2-e14642864373701.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deluxe-room-twin-1-2000px_wide1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9fda7ec8d8ee635b94792c19af1a7c68.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

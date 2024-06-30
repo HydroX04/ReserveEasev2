@@ -25,7 +25,9 @@ namespace ReserveEase
         private void btnLogout_Click(object sender, EventArgs e)
         {
             LOGIN_FORMM login = new LOGIN_FORMM();
+            this.Hide();
             login.Show();
+            
 
         }
 
@@ -34,25 +36,27 @@ namespace ReserveEase
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             DASHBOARD dashb = new DASHBOARD();
+            this.Hide();
             dashb.Show();
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            BOOK_NOW bookn = new BOOK_NOW();
-            bookn.Show();
+            reservationForm reservationForm = new reservationForm();
+            this.Hide();
+            reservationForm.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            INVOICE_FROM invoicef = new INVOICE_FROM();
-            invoicef.Show();
+            
         }
 
         private void btnRooms_Click(object sender, EventArgs e)
         {
             Services services = new Services();
+            this.Hide();
             services.Show();
  
         }
@@ -65,31 +69,34 @@ namespace ReserveEase
         private void btnGuest_Click(object sender, EventArgs e)
         {
             guestPage guestPage = new guestPage();
+            this.Hide();
             guestPage.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             contactUS contactUS = new contactUS();
+            this.Hide();
             contactUS.Show();
         }
 
         private void button4_Click_1(object sender, EventArgs e)
         {
             aboutUS aboutUS = new aboutUS();
+            this.Hide();
             aboutUS.Show();
         }
 
         private void btnReports_Click(object sender, EventArgs e)
         {
             ReportForm reportForm = new ReportForm();
+            this.Hide();
             reportForm.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            RoomManagementForm roomManagementForm = new RoomManagementForm();
-            roomManagementForm.Show();
+            
         }
     }
 }
