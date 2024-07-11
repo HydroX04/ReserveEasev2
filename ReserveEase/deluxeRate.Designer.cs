@@ -48,9 +48,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnHomeg = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnHomeg = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -287,27 +286,6 @@
             this.textBox1.TabIndex = 79;
             this.textBox1.Text = "Deluxe Room Rate";
             // 
-            // btnHomeg
-            // 
-            this.btnHomeg.Image = global::ReserveEase.Properties.Resources.icons8_back_30;
-            this.btnHomeg.Location = new System.Drawing.Point(887, 18);
-            this.btnHomeg.Name = "btnHomeg";
-            this.btnHomeg.Size = new System.Drawing.Size(41, 37);
-            this.btnHomeg.TabIndex = 81;
-            this.btnHomeg.UseVisualStyleBackColor = true;
-            this.btnHomeg.Click += new System.EventHandler(this.btnHomeg_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(935, 24);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 27);
-            this.label6.TabIndex = 82;
-            this.label6.Text = "ROOMS";
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::ReserveEase.Properties.Resources.image_removebg_preview2;
@@ -318,14 +296,24 @@
             this.pictureBox3.TabIndex = 83;
             this.pictureBox3.TabStop = false;
             // 
+            // btnHomeg
+            // 
+            this.btnHomeg.BackgroundImage = global::ReserveEase.Properties.Resources.icons8_close_50_black;
+            this.btnHomeg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnHomeg.Location = new System.Drawing.Point(1012, 12);
+            this.btnHomeg.Name = "btnHomeg";
+            this.btnHomeg.Size = new System.Drawing.Size(41, 37);
+            this.btnHomeg.TabIndex = 84;
+            this.btnHomeg.UseVisualStyleBackColor = true;
+            this.btnHomeg.Click += new System.EventHandler(this.btnHomeg_Click_1);
+            // 
             // deluxeRate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 605);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnHomeg);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox7);
@@ -366,8 +354,7 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Button btnHomeg;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btnHomeg;
     }
 }

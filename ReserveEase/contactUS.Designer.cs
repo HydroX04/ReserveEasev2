@@ -31,8 +31,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.btnCU = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,6 +41,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.btnAU = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,10 +49,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(105)))), ((int)(((byte)(128)))));
+            this.panel2.Controls.Add(this.btnAU);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label26);
-            this.panel2.Controls.Add(this.btnCU);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(2, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
@@ -81,27 +79,6 @@
             this.label8.Size = new System.Drawing.Size(350, 15);
             this.label8.TabIndex = 21;
             this.label8.Text = "Our team of Customer Care is ready to here from you.";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(938, 28);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(81, 27);
-            this.label26.TabIndex = 40;
-            this.label26.Text = "HOME";
-            // 
-            // btnCU
-            // 
-            this.btnCU.Image = global::ReserveEase.Properties.Resources.icons8_home_24;
-            this.btnCU.Location = new System.Drawing.Point(890, 26);
-            this.btnCU.Name = "btnCU";
-            this.btnCU.Size = new System.Drawing.Size(41, 33);
-            this.btnCU.TabIndex = 39;
-            this.btnCU.UseVisualStyleBackColor = true;
-            this.btnCU.Click += new System.EventHandler(this.btnCU_Click);
             // 
             // label2
             // 
@@ -217,6 +194,20 @@
             this.label11.TabIndex = 49;
             this.label11.Text = "LinkedIn: linkedin.com/company/reservease";
             // 
+            // btnAU
+            // 
+            this.btnAU.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAU.BackgroundImage = global::ReserveEase.Properties.Resources.icons8_close_50;
+            this.btnAU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAU.FlatAppearance.BorderSize = 0;
+            this.btnAU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAU.Location = new System.Drawing.Point(997, 16);
+            this.btnAU.Name = "btnAU";
+            this.btnAU.Size = new System.Drawing.Size(41, 33);
+            this.btnAU.TabIndex = 42;
+            this.btnAU.UseVisualStyleBackColor = true;
+            this.btnAU.Click += new System.EventHandler(this.btnAU_Click);
+            // 
             // contactUS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -249,8 +240,6 @@
 
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Button btnCU;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
@@ -262,5 +251,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnAU;
     }
 }

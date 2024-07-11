@@ -1,54 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics.Eventing.Reader;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ReserveEase
-{
-    public partial class LOGIN_FORMM : Form
-    {
-        public LOGIN_FORMM()
-        {
+namespace ReserveEase {
+    public partial class LOGIN_FORMM : Form {
+        public LOGIN_FORMM() {
             InitializeComponent();
+            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            DoubleBuffered = true;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        private void Form1_Load(object sender, EventArgs e) {
 
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
+        private void btnLogin_Click(object sender, EventArgs e) {
             string id = txtNameID.Text;
             string pass = txtPassword.Text;
 
-            if (id == "125" && pass == "123456")
-            {
-                WELCOME_PAGE f = new WELCOME_PAGE();
-                this.Hide();
-                f.Show();
-                
-            }
-            else
-            {
-                MessageBox.Show("Password or Email is  incorrect");
+            // Change '==' into .Equals for consistency.
+            if (id.Equals("staff") && pass.Equals("123456")) {
+                new DASHBOARD().Show();
+                Close();
+            } else {
+                MessageBox.Show("Password or Email is incorrect");
             }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
+        private void btnAU_Click(object sender, EventArgs e) {
+            Close();
+            Application.Exit();
         }
     }
 }

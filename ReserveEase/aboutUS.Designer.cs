@@ -29,10 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.btnAU = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -58,14 +55,16 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnAU = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -73,7 +72,6 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(105)))), ((int)(((byte)(128)))));
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label26);
             this.panel2.Controls.Add(this.btnAU);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(3, 1);
@@ -81,16 +79,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1063, 144);
             this.panel2.TabIndex = 3;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::ReserveEase.Properties.Resources.image_removebg_preview2;
-            this.pictureBox3.Location = new System.Drawing.Point(10, 16);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(133, 116);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 41;
-            this.pictureBox3.TabStop = false;
             // 
             // label8
             // 
@@ -105,27 +93,6 @@
     "lutions to streamline your booking processes and \r\nenhance customer experiences." +
     "";
             this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(938, 28);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(81, 27);
-            this.label26.TabIndex = 40;
-            this.label26.Text = "HOME";
-            // 
-            // btnAU
-            // 
-            this.btnAU.Image = global::ReserveEase.Properties.Resources.icons8_home_24;
-            this.btnAU.Location = new System.Drawing.Point(890, 26);
-            this.btnAU.Name = "btnAU";
-            this.btnAU.Size = new System.Drawing.Size(41, 33);
-            this.btnAU.TabIndex = 39;
-            this.btnAU.UseVisualStyleBackColor = true;
-            this.btnAU.Click += new System.EventHandler(this.btnAU_Click);
             // 
             // label2
             // 
@@ -383,6 +350,30 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::ReserveEase.Properties.Resources.image_removebg_preview2;
+            this.pictureBox3.Location = new System.Drawing.Point(10, 16);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(133, 116);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 41;
+            this.pictureBox3.TabStop = false;
+            // 
+            // btnAU
+            // 
+            this.btnAU.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAU.BackgroundImage = global::ReserveEase.Properties.Resources.icons8_close_50;
+            this.btnAU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAU.FlatAppearance.BorderSize = 0;
+            this.btnAU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAU.Location = new System.Drawing.Point(1002, 28);
+            this.btnAU.Name = "btnAU";
+            this.btnAU.Size = new System.Drawing.Size(41, 33);
+            this.btnAU.TabIndex = 39;
+            this.btnAU.UseVisualStyleBackColor = true;
+            this.btnAU.Click += new System.EventHandler(this.btnAU_Click);
+            // 
             // aboutUS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -420,13 +411,13 @@
             this.Text = "Form2";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -435,7 +426,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Button btnAU;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;

@@ -38,12 +38,11 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNameID = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnAU = new System.Windows.Forms.Button();
             this.LOGIN_FORM.SuspendLayout();
             this.LoginForm.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // LOGIN_FORM
@@ -58,8 +57,10 @@
             // LoginForm
             // 
             this.LoginForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(105)))), ((int)(((byte)(128)))));
+            this.LoginForm.BackgroundImage = global::ReserveEase.Properties.Resources._9fda7ec8d8ee635b94792c19af1a7c68;
+            this.LoginForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LoginForm.Controls.Add(this.btnAU);
             this.LoginForm.Controls.Add(this.panel1);
-            this.LoginForm.Controls.Add(this.pictureBox2);
             this.LoginForm.Location = new System.Drawing.Point(1, 0);
             this.LoginForm.Margin = new System.Windows.Forms.Padding(4);
             this.LoginForm.Name = "LoginForm";
@@ -155,15 +156,20 @@
             this.txtNameID.Size = new System.Drawing.Size(250, 22);
             this.txtNameID.TabIndex = 17;
             // 
-            // pictureBox2
+            // btnAU
             // 
-            this.pictureBox2.Image = global::ReserveEase.Properties.Resources._9fda7ec8d8ee635b94792c19af1a7c68;
-            this.pictureBox2.Location = new System.Drawing.Point(-1, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1066, 602);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 20;
-            this.pictureBox2.TabStop = false;
+            this.btnAU.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAU.BackColor = System.Drawing.Color.Transparent;
+            this.btnAU.BackgroundImage = global::ReserveEase.Properties.Resources.icons8_close_50;
+            this.btnAU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAU.FlatAppearance.BorderSize = 0;
+            this.btnAU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAU.Location = new System.Drawing.Point(1013, 11);
+            this.btnAU.Name = "btnAU";
+            this.btnAU.Size = new System.Drawing.Size(41, 33);
+            this.btnAU.TabIndex = 40;
+            this.btnAU.UseVisualStyleBackColor = false;
+            this.btnAU.Click += new System.EventHandler(this.btnAU_Click);
             // 
             // LOGIN_FORMM
             // 
@@ -182,7 +188,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -199,6 +204,6 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnAU;
     }
 }
