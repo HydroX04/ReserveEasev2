@@ -32,9 +32,9 @@ namespace ReserveEase.UserControls {
             textBox2.Clear();
             textBox7.Clear();
             checkInDateTimePicker.MinDate = DateTime.Now;
-            checkOutDateTimePicker.MinDate = DateTime.Now.AddDays(1);
+            checkOutDateTimePicker.MinDate = DateTime.Now;
             checkInDateTimePicker.Value = DateTime.Now;
-            checkOutDateTimePicker.Value = DateTime.Now.AddDays(1);
+            checkOutDateTimePicker.Value = DateTime.Now;
             textBox8.Clear();
             textBox3.Clear();
 

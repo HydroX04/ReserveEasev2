@@ -27,7 +27,10 @@
             this.reportDataGridView = new System.Windows.Forms.DataGridView();
             this.generateReportButton = new System.Windows.Forms.Button();
             this.formsPlot1 = new ScottPlot.FormsPlot();
+            this.button1 = new System.Windows.Forms.Button();
+            this.v = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.reportDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.v)).BeginInit();
             this.SuspendLayout();
             // 
             // reportTypeComboBox
@@ -69,19 +72,43 @@
             this.formsPlot1.Size = new System.Drawing.Size(743, 285);
             this.formsPlot1.TabIndex = 8;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(331, 27);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(141, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Print Reservation";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // v
+            // 
+            this.v.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.v.Location = new System.Drawing.Point(646, 149);
+            this.v.Name = "v";
+            this.v.RowHeadersWidth = 51;
+            this.v.RowTemplate.Height = 24;
+            this.v.Size = new System.Drawing.Size(10, 10);
+            this.v.TabIndex = 10;
+            // 
             // ReportDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.formsPlot1);
             this.Controls.Add(this.reportTypeComboBox);
             this.Controls.Add(this.reportDataGridView);
             this.Controls.Add(this.generateReportButton);
+            this.Controls.Add(this.v);
             this.Name = "ReportDashboard";
             this.Size = new System.Drawing.Size(783, 602);
             this.Load += new System.EventHandler(this.ReportDashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.reportDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.v)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -92,5 +119,7 @@
         private System.Windows.Forms.DataGridView reportDataGridView;
         private System.Windows.Forms.Button generateReportButton;
         private ScottPlot.FormsPlot formsPlot1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView v;
     }
 }
