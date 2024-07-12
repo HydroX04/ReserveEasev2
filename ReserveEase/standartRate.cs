@@ -1,27 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ReserveEase
-{
-    public partial class standartRate : Form
-    {
-        public standartRate()
-        {
+namespace ReserveEase {
+    public partial class standartRate : Form {
+        public standartRate() {
             InitializeComponent();
         }
 
-        private void btnHomeg_Click(object sender, EventArgs e)
-        {
-            Services services = new Services();
-            this.Hide();
-            services.Show();
+        private void btnHomeg_Click(object sender, EventArgs e) {
+
+        }
+
+        private void btnHomeg_Click_1(object sender, EventArgs e) {
+            Close();
         }
     }
 }

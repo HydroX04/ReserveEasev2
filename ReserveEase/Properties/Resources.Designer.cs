@@ -213,6 +213,26 @@ namespace ReserveEase.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_close_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-close-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_close_50_black {
+            get {
+                object obj = ResourceManager.GetObject("icons8-close-50_black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_dashboard_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-dashboard-24", resourceCulture);
