@@ -83,13 +83,13 @@ namespace ReserveEase.UserControls {
             // Ensure the columns match the properties of the DashboardORM class
             if (dataGridView1.Columns.Count >= 4) {
                 dataGridView1.Columns[0].HeaderText = "Guest Name";
-                dataGridView1.Columns[0].DataPropertyName = "GuestName"; // Ensure it matches the property name in DashboardORM
+                dataGridView1.Columns[0].DataPropertyName = "GuestName"; 
                 dataGridView1.Columns[1].HeaderText = "Room Number";
-                dataGridView1.Columns[1].DataPropertyName = "RoomNumber"; // Ensure it matches the property name in DashboardORM
+                dataGridView1.Columns[1].DataPropertyName = "RoomNumber"; 
                 dataGridView1.Columns[2].HeaderText = "Room Type";
-                dataGridView1.Columns[2].DataPropertyName = "RoomType"; // Ensure it matches the property name in DashboardORM
+                dataGridView1.Columns[2].DataPropertyName = "RoomType"; 
                 dataGridView1.Columns[3].HeaderText = "Check Out Date";
-                dataGridView1.Columns[3].DataPropertyName = "CheckOutTime"; // Ensure it matches the property name in DashboardORM
+                dataGridView1.Columns[3].DataPropertyName = "CheckOutTime"; 
             } else {
                 Debug.Print("Expected 4 columns but found " + dataGridView1.Columns.Count);
             }
