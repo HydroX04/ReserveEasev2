@@ -17,6 +17,14 @@ namespace ReserveEase.UserControls {
             dataGridView1.DataSource = null;
             try {
                 rooms = Database.conn.Table<Room>().ToList();
+                for (int i = 0; i < rooms.Count; i++) {
+                    Room r = rooms[i];
+                    Guest g = Database.conn.Table<Guest>().FirstOrDefault(gx =>
+                                !string.IsNullOrEmpty(gx.GuestID) && gx.GuestID.Equals(r.OccupiedBy));
+
+                    if (g == null) continue;
+                    rooms[i].OccupiedBy = $"{g.FirstName}{(string.IsNullOrEmpty(g.MiddleName) ? "" : " " + g.MiddleName)} {g.LastName}";
+                }
                 dataGridView1.DataSource = rooms;
                 dataGridView1.Columns[0].HeaderText = "Room Number";
                 dataGridView1.Columns[1].HeaderText = "Type";
