@@ -7,11 +7,11 @@ namespace ReserveEase.DB {
     internal static class Database {
 
         internal static SQLiteConnection conn;
+          // Load Database.
         internal static void Load() {
-            // Load Database.
             // The BaseDirectory property is a path of the folder where the running program
-            // is currently resided. 
             string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "reverseease.db");
+             // is currently resided. 
             bool isExists = File.Exists(path);
 
             SQLiteConnectionString connStr = new SQLiteConnectionString(path, false);
